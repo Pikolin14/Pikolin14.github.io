@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <img src="./assets/images/mi-foto.jfif" alt="Foto de [Tu Nombre]" class="foto-perfil">
+        <h1>Hola, soy Antonio</h1>
+        <p>Desarrollador Java</p>
+        <a href="#proyectos" class="btn">Ver Mis Proyectos</a>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>Desarrollador de Software con experiencia en el área de desarrollo de sistemas web mediante el uso de Java. He utilizado otras herramientas y tecnologías que ayudan al desarrollo de sistemas, como frameworks y patrones de diseño, los cuales facilitan el mantenimiento y desarrollo de sistemas. Actualmente, continúo ampliando mis conocimientos y actualizándome en tecnologías y lenguajes de programación. Busco una empresa enfocada en tecnología donde pueda aportar mis conocimientos y participar en la creación de soluciones tecnológicas.</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto 1.</p>
+            <a href="#">Ver Proyecto</a>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto 2.</p>
+            <a href="#">Ver Proyecto</a>
+        </div>
+        <!-- Agrega más proyectos según sea necesario -->
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>SQL</li>
+
+            <!-- Agrega más habilidades según sea necesario -->
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
