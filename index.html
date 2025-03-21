@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -24,6 +25,10 @@
         <h1>Hola, soy Antonio</h1>
         <p>Desarrollador Java</p>
         <a href="#proyectos" class="btn">Ver Mis Proyectos</a>
+        <!-- Botón para descargar CV con ícono -->
+        <a href="./assets/docs/Antonio Melendez cv.pdf" download="CV_Antonio_Desarrollador_Java.pdf" class="btn btn-cv">
+            <i class="fas fa-file-download"></i> Descargar CV
+        </a>
     </section>
 
     <section id="sobre-mi">
@@ -34,14 +39,18 @@
     <section id="proyectos">
         <h2>Proyectos</h2>
         <div class="proyecto">
-            <h3>Proyecto 1</h3>
-            <p>Descripción del proyecto 1.</p>
-            <a href="#">Ver Proyecto</a>
+            <img src="./assets/images/deportland.PNG" alt="Captura del Proyecto 1" class="imagen-proyecto">
+            <h3>DeportLand</h3>
+            <p>Un sistema desarrollado en Java con Spring Boot para gestionar inventarios en pequeñas y medianas empresas. Incluye módulos para registrar productos, gestionar stock y generar reportes.</p>
+            <p><strong>Tecnologías utilizadas:</strong> Java, JavaScript, HTML, CSS.</p>
+            <a href="https://github.com/Equipo-Quijda/hackaton-deportes" class="btn" target="_blank">Ver Repositorio en GitHub</a>
         </div>
         <div class="proyecto">
-            <h3>Proyecto 2</h3>
-            <p>Descripción del proyecto 2.</p>
-            <a href="#">Ver Proyecto</a>
+            <img src="./assets/images/Mictlan.PNG" alt="Captura del Proyecto 2" class="imagen-proyecto">
+            <h3>Mictlan</h3>
+            <p>Una plataforma educativa desarrollada en Java que permite a los usuarios acceder a cursos en línea, realizar evaluaciones y obtener certificados. Incluye un panel de administración para gestionar cursos y usuarios.</p>
+            <p><strong>Tecnologías utilizadas:</strong> Java, Spring Boot, JavaScript, HTML, CSS, MySQL.</p>
+            <a href="https://github.com/Equipo-Quijda/Proyecto-Integrador-Mictl-n" class="btn" target="_blank">Ver Repositorio en GitHub</a>
         </div>
         <!-- Agrega más proyectos según sea necesario -->
     </section>
@@ -74,6 +83,16 @@
 
             <button type="submit">Enviar</button>
         </form>
+
+            <!-- Íconos de GitHub y LinkedIn -->
+        <div class="redes-sociales">
+            <a href="https://github.com/Pikolin14" target="_blank" class="icono-red-social">
+                <i class="fab fa-github"></i> <!-- Ícono de GitHub -->
+            </a>
+            <a href="https://www.linkedin.com/in/edgar-antonio-mel%C3%A9ndez-reyes-059197257/" target="_blank" class="icono-red-social">
+                <i class="fab fa-linkedin"></i> <!-- Ícono de LinkedIn -->
+            </a>
+        </div>
     </section>
 
     <footer>

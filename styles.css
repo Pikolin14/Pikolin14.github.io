@@ -1,22 +1,25 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
+    background-color: #f3e5f5; /* Fondo morado claro */
 }
 
 header {
-    background: #333;
+    background: #6a1b9a; /* Morado principal */
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
@@ -27,63 +30,151 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffeb3b; /* Amarillo al hacer hover */
 }
 
 section {
-    padding: 2rem;
-    text-align: center;
-}
-
-#inicio {
-    background: #f4f4f4;
     padding: 4rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     text-align: center;
 }
 
-.perfil {
-    max-width: 600px;
-    margin: 0 auto;
+h1, h2, h3 {
+    color: #6a1b9a; /* Morado principal para títulos */
 }
 
-.foto-perfil {
-    width: 150px; /* Ajusta el tamaño de la imagen */
-    height: 150px;
-    border-radius: 50%; /* Hace que la imagen sea redonda */
-    border: 4px solid #333; /* Borde alrededor de la imagen */
-    margin-bottom: 1rem;
-    object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
+p {
+    color: #555;
 }
 
-#inicio h1 {
-    font-size: 2.5rem;
-}
-
-#inicio p {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-}
-
+/* Botones */
 .btn {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #333;
+    padding: 0.75rem 1.5rem;
+    background: #6a1b9a; /* Morado principal */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #9c27b0; /* Morado secundario al hacer hover */
+    transform: translateY(-3px); /* Efecto de elevación */
+}
+
+.btn-cv {
+    background: #9c27b0; /* Morado secundario */
+    margin-top: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.btn-cv:hover {
+    background: #6a1b9a; /* Morado principal al hacer hover */
+}
+
+.btn-cv i {
+    font-size: 1.2rem;
+}
+
+/* Estilos para la sección de inicio */
+#inicio {
+    background: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #6a1b9a; /* Borde morado */
+    margin-bottom: 1rem;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#inicio h1 {
+    font-size: 2.5rem;
+    color: #6a1b9a; /* Morado principal */
+}
+
+#inicio p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Estilos para la sección de proyectos */
+#proyectos {
+    background: #fff;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .proyecto {
-    margin: 1rem 0;
-    padding: 1rem;
-    background: #f4f4f4;
-    border-radius: 5px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background: #f3e5f5; /* Fondo morado claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.proyecto:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-proyecto {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.proyecto h3 {
+    font-size: 1.5rem;
+    color: #6a1b9a; /* Morado principal */
+    margin-bottom: 0.5rem;
+}
+
+.proyecto p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.proyecto a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #6a1b9a; /* Morado principal */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.proyecto a:hover {
+    background: #9c27b0; /* Morado secundario al hacer hover */
+}
+
+/* Estilos para la sección de habilidades */
 #habilidades ul {
     list-style: none;
     padding: 0;
@@ -93,15 +184,116 @@ section {
     display: inline-block;
     margin: 0 10px;
     padding: 0.5rem 1rem;
-    background: #333;
+    background: #6a1b9a; /* Morado principal */
     color: #fff;
     border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
+#habilidades ul li:hover {
+    background: #9c27b0; /* Morado secundario al hacer hover */
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+    background: #fff;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-contacto label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+#formulario-contacto input:focus,
+#formulario-contacto textarea:focus {
+    border-color: #6a1b9a; /* Morado principal */
+    outline: none;
+}
+
+#formulario-contacto textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#formulario-contacto button {
+    background: #6a1b9a; /* Morado principal */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#formulario-contacto button:hover {
+    background: #9c27b0; /* Morado secundario */
+}
+
+/* Estilos para la sección de redes sociales */
+.redes-sociales {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.icono-red-social {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: #6a1b9a; /* Morado principal */
+    transition: color 0.3s ease;
+}
+
+.icono-red-social:hover {
+    color: #9c27b0; /* Morado secundario al hacer hover */
+}
+
+/* Estilos para el footer */
 footer {
-    background: #333;
+    background: #6a1b9a; /* Morado principal */
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    #formulario-contacto {
+        padding: 1.5rem;
+    }
+
+    #formulario-contacto input,
+    #formulario-contacto textarea {
+        padding: 0.5rem;
+    }
+
+    #formulario-contacto button {
+        width: 100%;
+        padding: 0.75rem;
+    }
 }
